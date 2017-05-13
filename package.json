@@ -1,0 +1,10 @@
+{
+  "name": "frontend-boilerplate-react-redux",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "MixMasterT",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^3.19.0"
+  }
+}
