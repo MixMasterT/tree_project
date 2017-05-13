@@ -13,6 +13,7 @@
     "css-loader": "^0.28.1",
     "eslint": "^3.19.0",
     "file-loader": "^0.11.1",
+    "lodash": "^4.17.4",
     "node-sass": "^4.5.2",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
@@ -28,8 +29,8 @@
     "webpack-dev-server": "^2.4.5"
   },
   "scripts": {
-  "start": "webpack-dev-server --env development --hot  --inline --history-api-fallback",
-  "build": "webpack --env production",
-  "lint:js": "eslint app/ webpack.*.js --cache"
+    "start": "webpack-dev-server --env development --hot  --inline --history-api-fallback",
+    "build": "webpack --env production",
+    "lint:js": "eslint app/ webpack.*.js --cache"
   }
 }
