@@ -2,7 +2,7 @@ var path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./app.js",
+  entry: "./frontend/boilerplate.jsx",
   output: {
     path: path.join(__dirname, 'build'),
     filename: "bundle.js",

@@ -4,7 +4,7 @@ import configureStore from './store/store.js';
 import Root from './components/root';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const root = document.getElementById('root');
+  const root = document.getElementById('react-root');
   const store = configureStore();
 
   ReactDOM.render(<Root store={ store } />, root);
