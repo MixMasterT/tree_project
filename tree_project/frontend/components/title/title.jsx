@@ -28,7 +28,7 @@ class Title extends React.Component {
           <input
             type='text'
             onChange={(e) => this.setState({ label: e.target.value })}
-            value={this.state.title}
+            value={this.state.label}
             placeholder='Label'
             />
         </div>

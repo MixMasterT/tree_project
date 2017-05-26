@@ -1,0 +1,26 @@
+button, input[type="submit"] {
+  cursor: pointer;
+  width: 8em;
+  padding: 0.3em;
+  border: 1px solid grey;
+  border-radius: 0.3em;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  padding: 0.3em;
+}
+
+body {
+  background-color: #EEE;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}

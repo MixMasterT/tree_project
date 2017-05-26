@@ -23,21 +23,3 @@ ul {
 img {
   height: auto;
 }
-
-button, input[type="submit"] {
-  cursor: pointer;
-  width: 8em;
-  padding: 0.3em;
-  border: 1px solid grey;
-  border-radius: 0.3em;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-}

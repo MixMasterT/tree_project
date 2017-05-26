@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from '../icon/icon';
+import ListItem from '../list_item/list_item';
 import Title from '../title/title';
 
 class App extends React.Component {
@@ -12,7 +12,15 @@ class App extends React.Component {
     return (
       <div className='file-browser'>
         <Title />
-        <Icon icon='file' />
+        {this.props.fileData.map((fileItem, id) => (
+          <ListItem
+            key={id}
+            name={fileItem.name}
+            type={fileItem.type}
+            private={fileItem.private}
+            children={fileItem.children || []}
+          />
+        ))}
       </div>
     );
   }
