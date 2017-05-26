@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Label from './label.jsx';
+import App from './app.jsx';
 
 const mapStateToProps = (state, ownProps) => ({
-  // your code here...
+  fileData: state.fileData,
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -13,4 +13,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Label);
+)(App);
