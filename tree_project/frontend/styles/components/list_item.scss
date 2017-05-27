@@ -7,7 +7,7 @@
 }
 
 .list-item:hover {
-  background-color: lightblue;
+  background-color: #DDD;
   cursor: pointer;
 }
 
@@ -15,4 +15,5 @@
   width: 100%;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: 0.4em;
 }

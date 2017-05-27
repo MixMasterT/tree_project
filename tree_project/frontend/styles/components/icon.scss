@@ -2,7 +2,7 @@ $sprite-offset: -14px;
 
 .icon {
   overflow: hidden;
-  width: 16px;
+  width: 17px;
   height: 14px;
   margin: 5px;
 
@@ -28,6 +28,7 @@ $sprite-offset: -14px;
     filter: invert(50%);
   }
   .x {
-    object-position: 4 * $sprite-offset;
+    object-position: 3 * $sprite-offset;
+    filter: invert(50%);
   }
 }

@@ -16,12 +16,13 @@ class ListItem extends React.Component {
   render() {
 
     return (
-      <div
-        className='list-item'
-        onClick={() => this.setState({ open: !this.state.open })}
-      >
+      <div className='list-item' >
 
-        <ItemTitle parentState={this.state} parentProps={this.props} />
+        <ItemTitle
+          parentState={this.state}
+          parentProps={this.props}
+          handleClick={() => this.setState({ open: !this.state.open })}
+        />
 
         { this.state.open ?
           this.props.children.map((child, id) => (
