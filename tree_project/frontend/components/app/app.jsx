@@ -1,6 +1,7 @@
 import React from 'react';
 import ListItem from '../list_item/list_item';
 import Title from '../title/title';
+import DoneRow from '../done_row/done_row';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,6 +22,7 @@ class App extends React.Component {
             children={fileItem.children || []}
           />
         ))}
+        <DoneRow />
       </div>
     );
   }

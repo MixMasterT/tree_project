@@ -3,6 +3,12 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 1em;
+}
+
+.list-item:hover {
+  background-color: lightblue;
+  cursor: pointer;
 }
 
 .file-name {

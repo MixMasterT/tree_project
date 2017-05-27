@@ -1,10 +1,10 @@
 $sprite-offset: -14px;
 
 .icon {
-  position: relative;
   overflow: hidden;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 14px;
+  margin: 5px;
 
   img {
     object-fit: none;
@@ -22,6 +22,9 @@ $sprite-offset: -14px;
   .plus {
     object-position: 6 * $sprite-offset;
     filter: hue-rotate(180deg);
+  }
+  .x {
+    object-position: 4 * $sprite-offset;
   }
   .minus {
     object-position: 7 * $sprite-offset;
