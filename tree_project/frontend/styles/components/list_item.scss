@@ -1,3 +1,12 @@
 .list-item {
   padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.file-name {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

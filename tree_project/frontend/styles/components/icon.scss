@@ -1,5 +1,29 @@
+$sprite-offset: -14px;
+
 .icon {
   position: relative;
+  overflow: hidden;
   width: 15px;
   height: 15px;
+
+  img {
+    object-fit: none;
+    object-position: 0 0;
+  }
+  .folder {
+    left: 0;
+  }
+  .file {
+    object-position: 2 * $sprite-offset;
+  }
+  .private {
+    object-position: $sprite-offset;
+  }
+  .plus {
+    object-position: 6 * $sprite-offset;
+    filter: hue-rotate(180deg);
+  }
+  .minus {
+    object-position: 7 * $sprite-offset;
+  }
 }

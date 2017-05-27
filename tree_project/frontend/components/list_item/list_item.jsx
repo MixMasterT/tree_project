@@ -1,5 +1,8 @@
 import React from 'react';
+
 import Icon from '../icon/icon'
+
+import ItemTitle from './item_title';
 
 class ListItem extends React.Component {
   constructor(props) {
@@ -17,9 +20,8 @@ class ListItem extends React.Component {
         className='list-item'
         onClick={() => this.setState({ open: !this.state.open })}
       >
-        <Icon icon={this.state.open ? 'minus' : 'plus'} />
-        <Icon icon={this.props.type} />
-        <h3 className='file-name'>{this.props.name}</h3>
+
+        <ItemTitle parentState={this.state} parentProps={this.props} />
 
         { this.state.open ?
           this.props.children.map((child, id) => (
